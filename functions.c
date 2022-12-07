@@ -72,7 +72,7 @@ int	fmtspec(char a, va_list arg)
 		counter += ft_putnbr(va_arg(arg, int));
 	else if (a == 'u')
 		counter += ft_putnbr_uns(va_arg(arg, int));
-	if (a == 'c')
+	else if (a == 'c')
 		counter += ft_putchar((char)va_arg(arg, int));
 	else if (a == 'x')
 		counter += ft_nbrhex(va_arg(arg, unsigned int), "0123456789abcdef");
